@@ -1,34 +1,8 @@
 @import url("css/reset.css");
-h1 {
-    color: #ffffff;
-    display: grid;
-    justify-content: center;
-    font-size: 50px;
-    font-family: open sans, sans-serif;
-    font-weight: 300;
-    background-color: #970058
-}
 body {
     background-color: #c2c2c2;
     font-family: Arial, sans-serif;
-    margin: 0; 
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 20%;
-}
-p {
-    color: #ffffff;
-    line-height: 1.5;
-}
-a {
-    color: #4700cc;
-    text-decoration: none;
-}
-.column {
-    display: grid;
-    background-color: #ff004c;
-    border-radius: 8px;
-    justify-content: center;
+    margin: 0;
 }
 .strip {
     height: 50px;
@@ -38,25 +12,67 @@ a {
     display: flex;
     justify-content: center;
 }
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 80%;
+    grid-row-gap: 20px;
+    background-color: #c2c2c2;
+    max-width: 100%;
+}
+h1 {
+    color: #ffffff;
+    display: grid;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: open sans, sans-serif;
+    font-weight: 300;
+    background-color: #970058
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.5;
+}
+a {
+    color: #4700cc;
+    text-decoration: none;
+}
 .aside {
     background-color: #00578a;
-    padding: 10px;
     border-radius: 8px;
     display: grid;
     justify-content: center;
-    font-size: 50px;
+    font-size: 2rem;
     font-family: open sans, sans-serif;
     font-weight: 300;
 }
-.aside2 {
-    background-color: #00a2b8;
-    padding: 10px;
+.column {
+    display: grid;
+    background-color: #ff004c;
+    border-radius: 8px;
+    justify-content: center;
+}
+.column-space {
+    padding: 20px;
+    width: auto;
+    background-color: #00b66a;
+    margin: 0px;
     border-radius: 8px;
     display: grid;
+    row-gap: 30px;
+    align-items: center;
+    justify-items: stretch;
+}
+.aside2 {
+    display: grid;
+    align-items: center;
     justify-content: center;
-    font-size: 50px;
+    background-color: #00a2b8;
+    border-radius: 8px;
+    font-size: 2rem;
     font-family: open sans, sans-serif;
-    font-weight: 300;
 }
 footer {
     background-color: #ff6e0d;
@@ -67,13 +83,4 @@ footer {
     font-size: 50px;
     font-family: open sans, sans-serif;
     font-weight: 300;
-}
-.column-space {
-    padding: 20px 70px 20px 70px;
-    background-color: #00b66a;
-    margin: 0 auto;
-    border-radius: 8px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 50px;
 }
