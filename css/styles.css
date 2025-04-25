@@ -113,6 +113,9 @@ footer {
     justify-self: stretch;
     padding: 10px;
 }
+.dv-p {
+    display: none;
+}
 @media (min-width: 900px) {
     body {
         background-color: #c2c2c2;
@@ -163,7 +166,7 @@ footer {
         font-weight: 300;
         background-color: #970058;
         border-radius: 8px;
-        padding: 10px;
+        padding: 30px;
         margin: 0;
     }
     
@@ -193,6 +196,7 @@ footer {
         border-radius: 8px;
         justify-content: center;
         padding: 20px;
+        font-size: 2rem;
     }
     .column-space {
         padding: 20px;
@@ -226,6 +230,16 @@ footer {
         font-family: open sans, sans-serif;
         font-weight: 300;
         justify-self: stretch;
-        padding: 10px;
+        padding: 30px;
+    }
+    .dv {
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        font-size: 2rem;
+        justify-self: stretch;
+        row-gap:10px;
+    }
+    .dv-p {
+        display: grid;
     }
 }
