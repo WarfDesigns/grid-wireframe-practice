@@ -116,6 +116,13 @@ footer {
 .dv-p {
     display: none;
 }
+.dv {
+    display:grid;
+    grid-template-columns: 1fr;
+    font-size: 2rem;
+    justify-self: stretch;
+    gap:10px;
+}
 @media (min-width: 900px) {
     body {
         background-color: #c2c2c2;
@@ -237,7 +244,7 @@ footer {
         grid-template-columns: 1fr 2fr 1fr;
         font-size: 2rem;
         justify-self: stretch;
-        row-gap:10px;
+        gap:10px;
     }
     .dv-p {
         display: grid;
