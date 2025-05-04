@@ -61,6 +61,11 @@ a {
     color: #4700cc;
     text-decoration: none;
 }
+.threecolumns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;    
+}
 .aside {
     background-color: #00578a;
     border-radius: 8px;
@@ -124,7 +129,7 @@ footer {
     gap:10px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1075px) {
     body {
         background-color: #c2c2c2;
         font-family: Arial, sans-serif;
@@ -191,6 +196,7 @@ footer {
         background-color: #00578a;
         border-radius: 8px;
         display: grid;
+        align-items: center;
         justify-content: center;
         justify-self: stretch;
         font-size: 2rem;
@@ -208,6 +214,7 @@ footer {
     }
     .column-space {
         padding: 20px;
+        padding-top: 140px;
         width: auto;
         background-color: #00b66a;
         margin: 0px;
@@ -216,6 +223,11 @@ footer {
         row-gap: 30px;
         align-items: center;
         justify-self: stretch;
+    }
+    .threecolumns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;    
     }
     .aside2 {
         display: grid;
@@ -227,6 +239,7 @@ footer {
         font-family: open sans, sans-serif;
         justify-self: stretch;
         padding: 10px;
+
     }
     footer {
         background-color: #ff6e0d;
@@ -249,6 +262,8 @@ footer {
     }
     .dv-p {
         display: grid;
+        align-items: center;
+        justify-content: center;
     }
     
 }
